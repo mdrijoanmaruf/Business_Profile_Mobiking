@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaPhone, FaWhatsapp, FaEnvelope } from 'react-icons/fa'
+import { FaPhone, FaWhatsapp, FaEnvelope, FaFacebook, FaMapMarkerAlt } from 'react-icons/fa'
 import rihan from '../../public/Rihan.jpg'
 
 const Header = () => {
@@ -21,6 +21,16 @@ const Header = () => {
     window.open('mailto:rihanhasan01617@gmail.com', '_self')
   }
 
+  const handleFacebookClick = () => {
+    window.open('https://www.facebook.com/rihan.hasan69', '_blank')
+  }
+
+  const handleLocationClick = () => {
+    const location = "Jamuna Future Park, Dhaka"
+    const encodedLocation = encodeURIComponent(location)
+    window.open(`https://www.google.com/maps/search/?api=1&query=${encodedLocation}`, '_blank')
+  }
+
   return (
     <div className="relative p-8 text-center">
       <div 
@@ -40,29 +50,45 @@ const Header = () => {
       </p>
       
       {/* Quick Action Buttons */}
-      <div className="flex justify-center space-x-4">
+      <div className="flex justify-center space-x-3">
         <button
           onClick={handleCallClick}
-          className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center hover:bg-green-600 transition-colors cursor-pointer hover:scale-110 transform"
+          className="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center hover:bg-green-600 transition-colors cursor-pointer hover:scale-110 transform"
           title="Call Now"
         >
-          <FaPhone className="text-white text-lg" />
+          <FaPhone className="text-white text-sm" />
         </button>
         
         <button
           onClick={handleWhatsAppClick}
-          className="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center hover:bg-green-700 transition-colors cursor-pointer hover:scale-110 transform"
+          className="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center hover:bg-green-700 transition-colors cursor-pointer hover:scale-110 transform"
           title="WhatsApp"
         >
-          <FaWhatsapp className="text-white text-lg" />
+          <FaWhatsapp className="text-white text-sm" />
         </button>
         
         <button
           onClick={handleEmailClick}
-          className="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center hover:bg-purple-600 transition-colors cursor-pointer hover:scale-110 transform"
+          className="w-10 h-10 bg-purple-500 rounded-full flex items-center justify-center hover:bg-purple-600 transition-colors cursor-pointer hover:scale-110 transform"
           title="Email"
         >
-          <FaEnvelope className="text-white text-lg" />
+          <FaEnvelope className="text-white text-sm" />
+        </button>
+
+        <button
+          onClick={handleFacebookClick}
+          className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors cursor-pointer hover:scale-110 transform"
+          title="Facebook"
+        >
+          <FaFacebook className="text-white text-sm" />
+        </button>
+
+        <button
+          onClick={handleLocationClick}
+          className="w-10 h-10 bg-red-500 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors cursor-pointer hover:scale-110 transform"
+          title="Location"
+        >
+          <FaMapMarkerAlt className="text-white text-sm" />
         </button>
       </div>
     </div>
