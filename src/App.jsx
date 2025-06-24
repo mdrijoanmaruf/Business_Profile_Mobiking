@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './App.css'
+import rihan from '../public/Rihan.jpg'
 
 function BusinessCard() {
   const [activeTab, setActiveTab] = useState('contact')
@@ -11,9 +12,11 @@ function BusinessCard() {
         {/* Profile Section */}
         <div className="relative p-8 text-center">
           <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-br from-green-400 to-blue-600 p-1">
-            <div className="w-full h-full rounded-full bg-gray-200 flex items-center justify-center text-4xl font-bold text-gray-700">
-              📱
-            </div>
+            <img 
+              src={rihan}
+              alt="Rihan"
+              className="w-full h-full object-cover object-top rounded-full"
+            />
           </div>
           <h1 className="text-3xl font-bold text-white mb-2">Rihan Mobile Repair</h1>
           <p className="text-green-200 text-lg mb-4">Mobile Phone Technician</p>
@@ -66,17 +69,7 @@ function BusinessCard() {
                 </div>
                 <div>
                   <p className="text-gray-300 text-xs">Call / WhatsApp</p>
-                  <p className="text-white font-medium">+1 (555) 123-4567</p>
-                </div>
-              </div>
-              
-              <div className="flex items-center p-3 bg-white/5 rounded-xl hover:bg-white/10 transition-colors">
-                <div className="w-10 h-10 bg-blue-500 rounded-lg flex items-center justify-center mr-4">
-                  <span className="text-white">💬</span>
-                </div>
-                <div>
-                  <p className="text-gray-300 text-xs">SMS</p>
-                  <p className="text-white font-medium">+1 (555) 123-4567</p>
+                  <p className="text-white font-medium">01617061569</p>
                 </div>
               </div>
               
@@ -86,7 +79,7 @@ function BusinessCard() {
                 </div>
                 <div>
                   <p className="text-gray-300 text-xs">Email</p>
-                  <p className="text-white font-medium">rihan.repair@gmail.com</p>
+                  <p className="text-white font-medium">rihanhasan01617@gmail.com</p>
                 </div>
               </div>
               
@@ -97,16 +90,6 @@ function BusinessCard() {
                 <div>
                   <p className="text-gray-300 text-xs">Shop Location</p>
                   <p className="text-white font-medium">123 Tech Street, Downtown</p>
-                </div>
-              </div>
-
-              <div className="flex items-center p-3 bg-white/5 rounded-xl hover:bg-white/10 transition-colors">
-                <div className="w-10 h-10 bg-orange-500 rounded-lg flex items-center justify-center mr-4">
-                  <span className="text-white">🏠</span>
-                </div>
-                <div>
-                  <p className="text-gray-300 text-xs">Home Service</p>
-                  <p className="text-white font-medium">Available on request</p>
                 </div>
               </div>
             </div>
@@ -132,9 +115,9 @@ function BusinessCard() {
                 <h3 className="text-white font-semibold mb-3 flex items-center">
                   <span className="mr-2">📱</span> Supported Brands
                 </h3>
-                <div className="flex flex-wrap gap-2">
-                  {['iPhone', 'Samsung', 'Huawei', 'Xiaomi', 'OnePlus', 'Google'].map((brand) => (
-                    <span key={brand} className="px-3 py-1 bg-green-500/20 text-green-200 rounded-full text-sm">
+                <div className="grid grid-cols-2 gap-2">
+                  {['iPhone', 'Samsung', 'Huawei', 'Xiaomi', 'OnePlus', 'Google', 'Oppo', 'Vivo', 'Realme', 'Nokia', 'Sony', 'LG', 'Motorola', 'Nothing', 'Honor', 'Infinix'].map((brand) => (
+                    <span key={brand} className="px-2 py-1 bg-green-500/20 text-green-200 rounded-full text-xs text-center">
                       {brand}
                     </span>
                   ))}
@@ -170,7 +153,6 @@ function BusinessCard() {
                   <span className="mr-2">🛡️</span> Warranty
                 </h3>
                 <ul className="text-gray-300 text-sm space-y-1">
-                  <li>• 3 months warranty on repairs</li>
                   <li>• Original & high-quality parts</li>
                   <li>• Free diagnosis</li>
                 </ul>
