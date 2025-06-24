@@ -29,7 +29,7 @@ const Info = () => {
           <span className="mr-2">💳</span> Payment Methods
         </h3>
         <p className="text-gray-300 text-sm">
-          Cash, Card, UPI, PayPal accepted
+          Cash, Card, Bkash , Nagad
         </p>
       </div>
 
@@ -38,7 +38,7 @@ const Info = () => {
           <span className="mr-2">⭐</span> Experience
         </h3>
         <p className="text-gray-300 text-sm">
-          5+ years in mobile repair industry with 1000+ satisfied customers
+          1+ years in mobile repair industry with 100+ satisfied customers
         </p>
       </div>
     </div>

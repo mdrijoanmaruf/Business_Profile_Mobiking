@@ -16,6 +16,8 @@ const Services = () => {
           <li>• Camera Repair</li>
           <li>• Speaker & Microphone Fix</li>
           <li>• Water Damage Repair</li>
+          <li>• Motherboard Repair</li>
+          <li>• Others..</li>
         </ul>
       </div>
       
@@ -37,7 +39,7 @@ const Services = () => {
           <span className="mr-2">⚡</span> Quick Service
         </h3>
         <p className="text-gray-300 text-sm">
-          Most repairs completed within 30-60 minutes. Same day service available.
+          Most repairs completed within 1-2 hours. Same day service available.
         </p>
       </div>
     </div>
