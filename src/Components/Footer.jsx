@@ -1,10 +1,10 @@
 import React from 'react'
 
 const Footer = () => {
-  const phoneNumber = "01617061569"
+  const phoneNumber = "8801617061569" // Added country code +880 and removed leading 0
   
   const handleCallNow = () => {
-    window.open(`tel:${phoneNumber}`, '_self')
+    window.open(`tel:+8801617061569`, '_self') // Added + for international format
   }
   
   const handleWhatsApp = () => {
