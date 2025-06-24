@@ -43,7 +43,7 @@ const Header = () => {
           className="w-full h-full object-cover object-top rounded-full"
         />
       </div>
-      <h1 className="text-3xl font-bold text-white mb-2">Rihan Mobile Repair</h1>
+      <h1 className="text-3xl font-bold text-white mb-2">Rihan Hasan</h1>
       <p className="text-green-200 text-lg mb-4">Mobile Phone Technician</p>
       <p className="text-gray-300 text-sm leading-relaxed mb-6">
         Professional mobile phone repair services. Quick fixes, quality parts, and affordable prices.
