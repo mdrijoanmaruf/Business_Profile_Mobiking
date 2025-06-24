@@ -2,8 +2,8 @@ import React from 'react'
 import { FaPhone, FaEnvelope, FaFacebook, FaMapMarkerAlt } from 'react-icons/fa'
 
 const Contact = () => {
-  const phoneNumber = "01617061569"
-  const email = "rihanhasan01617@gmail.com"
+  const phoneNumber = "01833432077"
+  const email = "mamunbhuiyan733@gmail.com"
   const location = "Jamuna Future Park, Dhaka"
 
   const handleCallClick = () => {
@@ -15,7 +15,7 @@ const Contact = () => {
   }
 
   const handleFacebookClick = () => {
-    window.open('https://www.facebook.com/rihan.hasan69', '_blank')
+    window.open('https://www.facebook.com/mamunz33', '_blank')
   }
 
   const handleLocationClick = () => {
@@ -34,7 +34,7 @@ const Contact = () => {
         </div>
         <div>
           <p className="text-gray-300 text-xs">Call / WhatsApp</p>
-          <p className="text-white font-medium">01617061569</p>
+          <p className="text-white font-medium">01833432077</p>
         </div>
       </div>
       
@@ -47,7 +47,7 @@ const Contact = () => {
         </div>
         <div>
           <p className="text-gray-300 text-xs">Email</p>
-          <p className="text-white font-medium">rihanhasan01617@gmail.com</p>
+          <p className="text-white font-medium">mamunbhuiyan733@gmail.com</p>
         </div>
       </div>
       
@@ -60,7 +60,7 @@ const Contact = () => {
         </div>
         <div>
           <p className="text-gray-300 text-xs">Facebook</p>
-          <p className="text-white font-medium">Rihan Hasan</p>
+          <p className="text-white font-medium">Mamun Bhuiyan</p>
         </div>
       </div>
       
@@ -73,7 +73,7 @@ const Contact = () => {
         </div>
         <div>
           <p className="text-gray-300 text-xs">Shop Location</p>
-          <p className="text-white font-medium">Jamuna Future Park , Dhaka</p>
+          <p className="text-white font-medium">Level 4, Block D, Shop: 0051C1, Jamuna Future Park , Dhaka</p>
         </div>
       </div>
     </div>
