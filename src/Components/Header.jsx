@@ -74,7 +74,7 @@ const Header = () => {
         </p>
         
         {/* Service highlights */}
-        <div className="flex flex-wrap justify-center gap-2 mb-6">
+        {/* <div className="flex flex-wrap justify-center gap-2 mb-6">
           <span className="px-3 py-1 bg-green-500/20 text-green-200 rounded-full text-xs font-medium border border-green-500/30">
             ⚡ Same Day Service
           </span>
@@ -84,7 +84,7 @@ const Header = () => {
           <span className="px-3 py-1 bg-purple-500/20 text-purple-200 rounded-full text-xs font-medium border border-purple-500/30">
             💯 Quality Parts
           </span>
-        </div>
+        </div> */}
       </div>
       
       {/* Enhanced Quick Action Buttons */}
